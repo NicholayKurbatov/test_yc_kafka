@@ -1,11 +1,9 @@
 version: '2'
 services:
   connect:
-          image: yc/connect
+    image: yc/connect
     ports:
      - 8083:8083
-    links:
-     - sqlserver
     environment:
      - BOOTSTRAP_SERVERS=rc1b-hk3bjjjpkc55d51a.mdb.yandexcloud.net:9091
      - GROUP_ID=1
